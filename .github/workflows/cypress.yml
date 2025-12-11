@@ -18,7 +18,7 @@ jobs:
         with:
           node-version: 18
       - name: Install dependencies
-        run: npm install
+        run: npm install --save-dev cypress
       - name: Run Cypress tests
         run: npx cypress run
       - name: Upload Mochawesome HTML Report
