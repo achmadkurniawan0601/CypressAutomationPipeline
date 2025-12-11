@@ -20,7 +20,7 @@ jobs:
       - name: Install dependencies
         run: npm install --save-dev cypress
       - name: Run Cypress tests
-        run: npx cypress run
+        run: npx --no-install cypress run
       - name: Upload Mochawesome HTML Report
         if: always()
         uses: actions/upload-artifact@v4
