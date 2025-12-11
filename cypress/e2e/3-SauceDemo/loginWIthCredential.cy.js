@@ -17,7 +17,6 @@ describe("Login dengan data dari CSV", () => {
           cy.get('[data-test="username"]').type(user.username);
           cy.get('[data-test="password"]').type(user.password);
           cy.get('[data-test="login-button"]').click();
-          //   cy.url().should("include", "/inventory.html");
           cy.screenshot("percobaan-login-" + i);
           cy.reload();
         }

@@ -14,6 +14,8 @@ module.exports = defineConfig({
     },
     env: {
       saucedem0_url: "www.saucedemo.com",
+      x_url: "www.x.com",
+      instagram_url: "www.instagram.com",
       orangehrm_url:
         "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login",
       username: "Admin",

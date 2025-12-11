@@ -1,4 +1,3 @@
-//abc
 describe("test orang HRM", () => {
   beforeEach(() => {
     cy.visit("https://opensource-demo.orangehrmlive.com/");
@@ -14,7 +13,7 @@ describe("test orang HRM", () => {
     cy.contains("My Info").click();
     cy.get('#app [name="firstName"]').click();
     cy.get('#app [name="firstName"]').clear();
-    cy.get('#app [name="firstName"]').type("Achmad");
+    cy.get('#app [name="firstName"]').type("Mas Aziz");
     cy.get('#app [name="middleName"]').clear();
     cy.get('#app [name="middleName"]').type("Kurniawan");
     cy.get(
@@ -27,6 +26,7 @@ describe("test orang HRM", () => {
       "#app div:nth-child(2) > div:nth-child(2) > div.oxd-radio-wrapper > label > span.oxd-radio-input"
     ).click();
     cy.get('#app input[value="2"]').check();
+    cy.wait(3000);
     cy.get(
       "#app div:nth-child(1) > form.oxd-form > div.oxd-form-actions > button.oxd-button"
     ).click();
